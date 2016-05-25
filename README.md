@@ -43,7 +43,7 @@ index 124157e..e7eef40 100644
 $ http_proxy=http://localhost:3128 node index-debug.js
 ```
 
-```json
+```
 { request:
    { debugId: 1,
      uri: 'http://api.ipify.org/?format=json',
