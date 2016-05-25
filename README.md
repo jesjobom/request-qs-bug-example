@@ -1,5 +1,7 @@
 # Example for a bug in NodeJS module Request
 
+[Request Issue #2223](https://github.com/request/request/issues/2223)
+
 When trying to access an URL using GET method and adding a Query by *qs* function AND using a Proxy configured with *http_proxy*, the request will be configured without protocol or host.
 
 Given the NodeJS app as published, running `http_proxy=http://localhost:3128 node index.js` will give me the content of [error.page.html](error.page.html):
