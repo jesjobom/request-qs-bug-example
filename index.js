@@ -1,6 +1,6 @@
 var Request = require("request");
 
-var request = new Request.get({url: "http://api.ipify.org/", qs: {'format' : 'json'}}, function(error, response, body) {
+var request = new Request.get("http://api.ipify.org/", function(error, response, body) {
   if (response && response.statusCode == 200) {
     console.log(body);
   } else {
